@@ -4,11 +4,10 @@ import "./controllers"
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-function App() {
-  return (<h1>Hello World!</h1>);
-}
-
+import { Provider } from 'react-redux'
+import {BrowserRouter} from 'react-router-dom'
+import App from './App';
+import store from '.store';
 ReactDOM.render(
   <App/>,
   document.getElementById('root'),
